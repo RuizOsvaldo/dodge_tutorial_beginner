@@ -9,8 +9,7 @@
         "main.ts",
         "README.md",
         "assets.json",
-        "main.py",
-        "dodge-tutorial.md"
+        "main.py"
     ],
     "testFiles": [
         "test.ts"
