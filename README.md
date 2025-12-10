@@ -261,7 +261,7 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSp
 
 ## Step 12 - Destroy and lose life
 
-Inside the overlap event, add ``||sprites:destroy otherSprite||`` with a **fire** effect. Then add ``||info:change life by -1||`` and a short ``||loops:pause||`` of `1500` ms to give the player a moment to recover.
+When collision occurs, inside the overlap event, add ``||sprites:destroy||`` to destroy your enemy with a **fire** effect. Then add ``||info:change life by -1||`` and a short ``||loops:pause||`` of `1500` ms to give the player a moment to recover.
 
 ```blocks
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSprite) {
